@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b17">
+  <meta name="description" content="Match Live — scores et actualités du football en direct.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Match Live — Football en direct</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">M</span><span>MATCH <b>LIVE</b></span></a>
+    <span class="live-label"><i></i> FOOTBALL</span>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">TOUT LE FOOT, EN UN SEUL ENDROIT</p>
+        <h1>Vis le match.<br><span>En temps réel.</span></h1>
+        <p class="hero-sub">Scores, résultats et actualités du football.</p>
+      </div>
+      <div class="hero-ball" aria-hidden="true">⚽</div>
+    </section>
+    <div class="notice" id="dataNotice"><strong>Mode aperçu</strong> — les scores réels seront affichés après la connexion sécurisée de la source football.</div>
+    <nav class="tabs" aria-label="Navigation principale">
+      <button class="tab active" data-view="live">En direct</button>
+      <button class="tab" data-view="today">Aujourd'hui</button>
+      <button class="tab" data-view="news">Actualités</button>
+    </nav>
+    <section class="section-head">
+      <div><p class="eyebrow">CENTRE DES MATCHS</p><h2 id="sectionTitle">Matchs en direct</h2></div>
+      <span class="date-chip" id="todayDate"></span>
+    </section>
+    <section id="matches" class="matches">
+      <div class="empty-state">
+        <span class="empty-icon">🏟️</span>
+        <h3>Prêt pour le coup d'envoi</h3>
+        <p>Les rencontres et les scores apparaîtront ici dès que l'API football sera connectée.</p>
+      </div>
+    </section>
+    <section id="newsPanel" class="news-panel hidden">
+      <div class="empty-state compact"><span class="empty-icon">📰</span><h3>Actualités football</h3><p>Le fil d'actualité sera activé lors de la prochaine étape.</p></div>
+    </section>
+  </main>
+  <footer><span class="brand small"><span class="brand-mark">M</span> MATCH <b>LIVE</b></span><span>Le football en direct, partout.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

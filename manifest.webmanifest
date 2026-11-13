@@ -1,0 +1,11 @@
+{
+  "name": "Match Live",
+  "short_name": "Match Live",
+  "description": "Scores et actualités du football",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07110f",
+  "theme_color": "#071b17",
+  "lang": "fr",
+  "icons": []
+}
